@@ -14,12 +14,58 @@
     box-sizing: border-box;
 }
 
+#logo-mercado-liebre {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+/* Tamaños tipográficos */
+
+.titulares {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.cuerpo-texto {
+    font-size: 12px;
+}
+
+.precios {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.descuentos {
+    font-size: 16px;
+    line-height: 24px;
+    color: #39b54a;
+    margin-top: 0;
+}
+
+.descripciones {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+    font-weight: normal;
+    display: none;
+}
+
+
+
+/* Body */
+
 body {
     font-family: 'Roboto', 'sans-serif';
     background-color: #ebebeb;
 }
 
+
+
 /* Header */
+
 header {
     background-color: #EAC926;
     padding: 10px;
@@ -27,6 +73,10 @@ header {
 
 .texto-centrado {
     text-align: center;
+}
+
+.site, .login-navbar {
+    display: none;
 }
 
 nav, nav ul {
@@ -48,6 +98,7 @@ nav li {
 .search-bar input {
     width: 80%;
     margin-top: 10px;
+    max-width: 500px;
 }
 
 .burger-menu {
@@ -64,31 +115,37 @@ nav li {
     margin-top: 13px;
 }
 
-/* Tamaños tipográficos */
 
-.titulares {
-    font-size: 24px;
-    line-height: 32px;
+
+/* Main */
+
+.fa-truck {
+    color: #39b54a;
+    margin-top: 10px;
 }
 
-.cuerpo-texto {
-    font-size: 12px;
+main {
+    text-align: center;
+    margin: auto;
+    width: 90vw;
 }
 
-.precios {
-    font-size: 18px;
-    line-height: 26px;
+main img {
+    width: 80%;
 }
 
-.descuentos {
-    font-size: 16px;
-    line-height: 24px;
+main div {
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
 }
 
-.descripciones {
-    font-size: 16px;
-    line-height: 24px;
+article {
+    background: #fff;
 }
+
+
 
 /* Footer */
 
@@ -120,4 +177,47 @@ footer section {
 .copyright {
     text-align: left;
     margin-top: 50px;
+}
+
+
+
+/* Tablet design */
+
+@media (min-width: 361px) {
+    .descripciones {
+        display: block;
+    }
+    
+    .site, .login-navbar {
+    display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+
+/* Desktop design */
+
+@media (min-width: 769px) {
+    .descripciones {
+        display: block;
+    }
+
+    .site, .login-navbar {
+    display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
