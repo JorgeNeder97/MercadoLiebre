@@ -1,0 +1,397 @@
+/* 
+    Paleta de colores
+
+- Amarillo: #EAC926;
+- Azul: #03264C;
+- Celeste: #1259c3;
+- Gris oscuro: #666;
+- Gris claro: #ebebeb;
+- Verde: #39b54a; 
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Tamaños tipográficos */
+
+.titulares {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.cuerpo-texto {
+    font-size: 12px;
+}
+
+.precios {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    max-width: 45%;
+    margin-right: 5px;
+}
+
+.descuentos {
+    font-size: 16px;
+    line-height: 24px;
+    color: #39b54a;
+    margin-top: 0;
+    max-width: 55%;
+}
+
+.descripciones {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+    font-weight: normal;
+    display: none;
+}
+
+
+/* Body */
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #ebebeb;
+}
+
+.banner {
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+.logo-and-search-bar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo-mercado-liebre {
+    width: 45%;
+    max-width: 500px;
+}
+
+.logo-and-search-bar input {
+    width: 40%;
+    margin-top: 10px;
+    max-width: 500px;
+    align-self: center;
+    border-radius: 2px;
+}
+
+#boton-busqueda {
+    margin-top: 10px;
+}
+
+.cuotas {
+    margin-top: 20px;
+}
+
+section .titulares {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.site, .login-navbar {
+    display: none;
+}
+
+nav, nav ul {
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #000;
+}
+
+nav li {
+    list-style: none;
+}
+
+
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    background-color: #1259c3;
+    margin: 0 auto;
+    padding: 5px;
+    text-align:center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.burger-menu i {
+    margin-top: 45%;
+}
+
+
+
+/* Main */
+main section {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b53a;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    right: 1px;
+    top: -40px;
+    color: #39b53a;
+    margin-top: 10px;
+}
+
+.precio-descuento-truck {
+    position: relative;
+    border: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.desc-container {
+    border-bottom:none;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    width: 90vw;
+}
+
+#logo-home {
+    width:30%;
+}
+
+#logo-home img {
+    width: 100%;
+}
+
+main img {
+    width: 80%;
+}
+
+main div {
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+article {
+    background: #fff;
+    text-align:center;
+}
+
+
+/* Footer */
+
+footer {
+    margin: 10px 5px 5px 5px;
+    background-color: #fff;
+    padding: 30px 5px 5px 5px;
+    color: #666;
+}
+
+.footer-p {
+    margin: 0 0 30px 0;
+    padding: 0 35px 0 35px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+footer section {
+    text-align:center;
+}
+
+.footer-icon {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.copyright {
+    text-align: left;
+    margin-top: 50px;
+}
+
+
+
+/* Tablet design */
+
+@media (min-width: 361px) {
+    .descripciones {
+        display: block;
+    }
+
+    #logo-mercado-liebre {
+        width: 30%;
+    }
+    
+    .logo-and-search-bar input {
+        width: 30%;
+    }
+
+    .cuotas {
+        width: 30%;
+    }
+
+    nav {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        padding: 0;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site, .login-navbar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .site {
+        width: 35%;
+    }
+    
+    .login-navbar {
+        width: 35%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .article-flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: baseline stretch;
+        margin-bottom: 50px;
+        gap: 10px;
+        padding: 0;
+    }
+    .precio-descuento-truck {
+        flex-flow: column wrap;
+    }
+}
+
+@media (min-width: 550px) {
+    .precio-descuento-truck {
+        flex-flow: row wrap;
+    }
+}
+
+
+/* Desktop design */
+
+@media (min-width: 769px) {
+    .descripciones {
+        display: block;
+    }
+
+    nav {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        padding: 0;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site, .login-navbar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .site {
+        width: 35%;
+    }
+    
+    .login-navbar {
+        width: 35%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    section .titulares {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 20%;
+        margin-bottom: 20px;
+    }
+
+    .article-flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: baseline stretch;
+        margin-bottom: 50px
+    }
+
+    .precio-descuento-truck {
+        flex-flow: column wrap;
+    }
+}
+
+@media (min-width: 1100px) {
+    .precio-descuento-truck {
+        flex-flow: row wrap;
+    }
+}
+
+

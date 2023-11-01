@@ -190,6 +190,14 @@ main {
     width: 90vw;
 }
 
+#logo-home {
+    width:30%;
+}
+
+#logo-home img {
+    width: 100%;
+}
+
 main img {
     width: 80%;
 }
