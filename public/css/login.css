@@ -16,45 +16,6 @@
     padding: 0;
 }
 
-
-
-
-/* Tamaños tipográficos */
-
-.titulares {
-    font-size: 24px;
-    line-height: 32px;
-}
-
-.cuerpo-texto {
-    font-size: 12px;
-}
-
-.precios {
-    font-size: 18px;
-    line-height: 26px;
-    margin: 0;
-    max-width: 45%;
-    margin-right: 5px;
-}
-
-.descuentos {
-    font-size: 16px;
-    line-height: 24px;
-    color: #39b54a;
-    margin-top: 0;
-    max-width: 55%;
-}
-
-.descripciones {
-    font-size: 16px;
-    line-height: 24px;
-    color: #666;
-    font-weight: normal;
-    display: none;
-}
-
-
 /* Body */
 
 body {
@@ -150,70 +111,65 @@ nav li {
 
 
 /* Main */
-main section {
-    display: flex;
-    flex-flow: column wrap;
+span {
+    color: red;
+    font-size: 12px;
+    display:none;
 }
 
-.fa-truck {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b53a;
-    border-radius: 50%;
-    background-color: #FFF;
-    position: absolute;
-    right: 1px;
-    top: -40px;
-    color: #39b53a;
-    margin-top: 10px;
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.precio-descuento-truck {
-    position: relative;
+.form-userPass {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 50vh;
+}
+
+.form-userPass input {
+    width: 70vw;
+    min-width: 50vw;
     border: none;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    padding: 0;
+    min-height: 50px;
+    border-radius: 7px;
+    padding-left: 10px;
 }
 
-.desc-container {
-    border-bottom:none;
+.form-userPass__user {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-main {
-    text-align: center;
-    margin: auto;
-    width: 90vw;
+.form-userPass__pass {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-#logo-home {
-    width:30%;
+.form-submit {
+    width: 70vw;
+    background: #1259c3;
+    min-height: 50px;
+    border-radius: 7px;
+    border:none;
+    color: #FFFFFF;
 }
 
-#logo-home img {
-    width: 100%;
+.form-submit:hover {
+    background: #0022AA;
+    transition: .3s;
 }
-
-main img {
-    width: 80%;
-}
-
-main div {
-    text-align: left;
-    margin-bottom: 10px;
-    border: 1px solid #ebebeb;
-    padding: 15px;
-}
-
-article {
-    background: #fff;
-    text-align:center;
-}
-
 
 /* Footer */
 
@@ -253,19 +209,14 @@ footer section {
 /* Tablet design */
 
 @media (min-width: 361px) {
-    .descripciones {
-        display: block;
-    }
+
+    /* Header */
 
     #logo-mercado-liebre {
         width: 30%;
     }
     
     .logo-and-search-bar input {
-        width: 30%;
-    }
-
-    .cuotas {
         width: 30%;
     }
 
@@ -298,40 +249,14 @@ footer section {
     .burger-menu {
         display: none;
     }
-
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        max-width: 40%;
-        margin-bottom: 20px;
-    }
-
-    .article-flex{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: baseline stretch;
-        margin-bottom: 50px;
-        gap: 10px;
-        padding: 0;
-    }
-    .precio-descuento-truck {
-        flex-flow: column wrap;
-    }
-}
-
-@media (min-width: 550px) {
-    .precio-descuento-truck {
-        flex-flow: row wrap;
-    }
 }
 
 
 /* Desktop design */
 
 @media (min-width: 769px) {
-    .descripciones {
-        display: block;
-    }
+
+    /* Header */
 
     nav {
         margin-top: 60px;
@@ -364,33 +289,22 @@ footer section {
         display: none;
     }
 
-    section .titulares {
-        margin-top: 50px;
-        margin-bottom: 40px;
-    }
+    /* Footer */
 
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        max-width: 20%;
-        margin-bottom: 20px;
-    }
-
-    .article-flex{
+    footer {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: baseline stretch;
-        margin-bottom: 50px
+        align-items: center;
+        justify-content: space-evenly;
     }
 
-    .precio-descuento-truck {
-        flex-flow: column wrap;
+    footer section {
+        max-width: 30%;
     }
-}
 
-@media (min-width: 1100px) {
-    .precio-descuento-truck {
-        flex-flow: row wrap;
+    footer section:last-child {
+        position: relative;
+        right: 35%;
     }
 }
 

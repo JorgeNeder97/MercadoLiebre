@@ -17,49 +17,12 @@
 }
 
 
-
-
-/* Tamaños tipográficos */
-
-.titulares {
-    font-size: 24px;
-    line-height: 32px;
-}
-
-.cuerpo-texto {
-    font-size: 12px;
-}
-
-.precios {
-    font-size: 18px;
-    line-height: 26px;
-    margin: 0;
-    max-width: 45%;
-    margin-right: 5px;
-}
-
-.descuentos {
-    font-size: 16px;
-    line-height: 24px;
-    color: #39b54a;
-    margin-top: 0;
-    max-width: 55%;
-}
-
-.descripciones {
-    font-size: 16px;
-    line-height: 24px;
-    color: #666;
-    font-weight: normal;
-    display: none;
-}
-
-
 /* Body */
 
 body {
     font-family: 'Roboto', 'sans-serif';
     background-color: #ebebeb;
+    width: 100vw;
 }
 
 .banner {
@@ -71,6 +34,14 @@ body {
 header {
     background-color: #EAC926;
     padding: 10px;
+}
+
+#logo-home {
+    width:30%;
+}
+
+#logo-home img {
+    width: 100%;
 }
 
 .logo-and-search-bar {
@@ -148,72 +119,158 @@ nav li {
 }
 
 
-
 /* Main */
-main section {
-    display: flex;
-    flex-flow: column wrap;
+span {
+    color: #FF0000;
+    font-size: 12px;
+    display: none;
 }
 
-.fa-truck {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b53a;
-    border-radius: 50%;
-    background-color: #FFF;
-    position: absolute;
-    right: 1px;
-    top: -40px;
-    color: #39b53a;
-    margin-top: 10px;
-}
-
-.precio-descuento-truck {
-    position: relative;
-    border: none;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    padding: 0;
-}
-
-.desc-container {
-    border-bottom:none;
-}
-
-main {
+h2 {
     text-align: center;
-    margin: auto;
-    width: 90vw;
+    margin-top: 15px;
 }
 
-#logo-home {
-    width:30%;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    min-height: 1600px;
+    padding-left: 20px;
 }
 
-#logo-home img {
+form label {
+    font-size: 16px;
+    text-shadow: 1px 1px 2px #bbb;
+}
+
+/* Class form-column */
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+}
+
+.form-column input {
+    height: 40px;
+    width: 80vw;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+input[type="file"] {
+    border: none;
+    margin-left: -5px;
+}
+
+
+.form-column input:hover {
+    border: 1px solid #aaa;
+    transition: all .3s;
+}
+
+.form-column input:focus {
+    border: 1px solid #666;
+    outline: none;
+}
+
+input[type="file"]:hover {
+    border: none;
+    outline: none;
+}
+
+input[type="file"]:focus {
+    border: none;
+    outline: none;
+}
+
+/* Other */
+
+.perfUsuario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.perfUsuario-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.perfUsuario-input div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-catDeInteres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.catDeInteres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.catDeInteres div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-submitReset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
     width: 100%;
 }
 
-main img {
-    width: 80%;
+#boton-enviar {
+    height: 40px;
+    width: 40%;
+    background: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-main div {
-    text-align: left;
-    margin-bottom: 10px;
-    border: 1px solid #ebebeb;
-    padding: 15px;
+#boton-enviar:hover {
+    background: #0022EE;
+    box-shadow: 0px 0px 10px #aaa;
+    transition: .3s;
 }
 
-article {
-    background: #fff;
-    text-align:center;
+#boton-reset {
+    height: 40px;
+    width: 40%;
+    border: none;
+    text-decoration: underline;
+    background: #666;
+    color: #FFF;
+    border-radius: 5px;
 }
 
+#boton-reset:hover {
+    background: #ebebeb;
+    color: #000;
+    transition: .3s;
+}
 
 /* Footer */
 
@@ -253,9 +310,8 @@ footer section {
 /* Tablet design */
 
 @media (min-width: 361px) {
-    .descripciones {
-        display: block;
-    }
+
+    /* Header */
 
     #logo-mercado-liebre {
         width: 30%;
@@ -299,40 +355,14 @@ footer section {
         display: none;
     }
 
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        max-width: 40%;
-        margin-bottom: 20px;
-    }
-
-    .article-flex{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: baseline stretch;
-        margin-bottom: 50px;
-        gap: 10px;
-        padding: 0;
-    }
-    .precio-descuento-truck {
-        flex-flow: column wrap;
-    }
-}
-
-@media (min-width: 550px) {
-    .precio-descuento-truck {
-        flex-flow: row wrap;
-    }
 }
 
 
 /* Desktop design */
 
 @media (min-width: 769px) {
-    .descripciones {
-        display: block;
-    }
 
+    /* Header */
     nav {
         margin-top: 60px;
         margin-bottom: 10px;
@@ -364,34 +394,71 @@ footer section {
         display: none;
     }
 
-    section .titulares {
-        margin-top: 50px;
-        margin-bottom: 40px;
+    /* Main */
+    form {
+        align-items: center;
     }
 
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        max-width: 20%;
-        margin-bottom: 20px;
+    .form-column input {
+        width: 30vw;
     }
 
-    .article-flex{
+    .perfUsuario {
+        align-items: center;
+        gap: 45px;
+        width: 70vw;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #666;
+    }
+
+    .perfUsuario-input {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .form-catDeInteres {
+        align-items: center;
+        gap: 45px;
+        border-bottom: 1px solid #666;
+        width: 70vw;
+        padding-bottom: 60px;
+    }
+
+    .catDeInteres {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .form-submitReset {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #boton-enviar {
+        width: 40%;
+    }
+
+    /* Footer */
+
+    footer {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: baseline stretch;
-        margin-bottom: 50px
+        align-items: center;
+        justify-content: space-evenly;
     }
 
-    .precio-descuento-truck {
-        flex-flow: column wrap;
+    footer section {
+        max-width: 30%;
+    }
+
+    footer section:last-child {
+        position: relative;
+        right: 35%;
     }
 }
 
-@media (min-width: 1100px) {
-    .precio-descuento-truck {
-        flex-flow: row wrap;
-    }
-}
 
 

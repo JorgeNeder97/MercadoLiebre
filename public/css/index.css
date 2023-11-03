@@ -55,6 +55,7 @@
 }
 
 
+
 /* Body */
 
 body {
@@ -71,6 +72,14 @@ body {
 header {
     background-color: #EAC926;
     padding: 10px;
+}
+
+#logo-home {
+    width:30%;
+}
+
+#logo-home img {
+    width: 100%;
 }
 
 .logo-and-search-bar {
@@ -153,6 +162,8 @@ nav li {
 main section {
     display: flex;
     flex-flow: column wrap;
+    min-height: 430px;
+    margin-bottom:0;
 }
 
 .fa-truck {
@@ -190,14 +201,6 @@ main {
     width: 90vw;
 }
 
-#logo-home {
-    width:30%;
-}
-
-#logo-home img {
-    width: 100%;
-}
-
 main img {
     width: 80%;
 }
@@ -212,6 +215,21 @@ main div {
 article {
     background: #fff;
     text-align:center;
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: .3s;
+}
+
+article:hover .descripciones {
+    display:block;
+    transition: .3s;
+}
+
+article:hover .fa-truck {
+    transform: rotate(-90deg);
+    transition: .3s;
 }
 
 
@@ -253,9 +271,8 @@ footer section {
 /* Tablet design */
 
 @media (min-width: 361px) {
-    .descripciones {
-        display: block;
-    }
+
+    /* Header */
 
     #logo-mercado-liebre {
         width: 30%;
@@ -299,21 +316,37 @@ footer section {
         display: none;
     }
 
+    /* Main */
+
     article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 40%;
         margin-bottom: 20px;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: .3s;
+    }
+
+    article:hover .descripciones {
+        display:block;
+        transition: .3s;
+    }
+    
+    article:hover .fa-truck {
+        transform: rotate(-90deg);
+        transition: .3s;
     }
 
     .article-flex{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        align-items: baseline stretch;
-        margin-bottom: 50px;
+        align-items: baseline;
         gap: 10px;
         padding: 0;
     }
+
     .precio-descuento-truck {
         flex-flow: column wrap;
     }
@@ -329,10 +362,7 @@ footer section {
 /* Desktop design */
 
 @media (min-width: 769px) {
-    .descripciones {
-        display: block;
-    }
-
+    /* Header */
     nav {
         margin-top: 60px;
         margin-bottom: 10px;
@@ -364,15 +394,31 @@ footer section {
         display: none;
     }
 
+    /* Main */
+
     section .titulares {
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 40px;
     }
 
     article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 20%;
         margin-bottom: 20px;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: .3s;
+    }
+
+    article:hover .descripciones {
+        display:block;
+        transition: .3s;
+    }
+    
+    article:hover .fa-truck {
+        transform: rotate(-90deg);
+        transition: .3s;
     }
 
     .article-flex{
@@ -380,12 +426,30 @@ footer section {
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: baseline stretch;
-        margin-bottom: 50px
     }
 
     .precio-descuento-truck {
         flex-flow: column wrap;
     }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    footer section {
+        max-width: 30%;
+    }
+
+    footer section:last-child {
+        position: relative;
+        right: 35%;
+    }
+
 }
 
 @media (min-width: 1100px) {

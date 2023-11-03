@@ -40,14 +40,16 @@
     <main>
         <form action="/home" method="POST">
             <div class="form-userPass">
-                <label for="nombreUsuario">Nombre de Usuario</label>
-                <input type="text" name="nombreUsuario" placeholder="Ingresa tu nombre de Usuario aquí" required>
-                <label for="password">contraseña</label>
-                <input type="password" name="password" required>
+                <div class="form-userPass__user">
+                    <input type="text" name="nombreUsuario" placeholder="Nombre de Usuario" required>
+                    <span>El usuario ingresado no existe, ingresa un usuario válido o registrate.</span>
+                </div>
+                <div class="form-userPass__pass">
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <span>La contraseña ingresada no es correcta.</span>
+                </div>
             </div>
-            <div class="form-submitReset">
-                <a href="/home"><button type="submit">ENVIAR</button></a>
-            </div>
+            <a href="/home"><button type="submit" class="form-submit">Enviar</button></a>
         </form>
     </main>
     <footer>
