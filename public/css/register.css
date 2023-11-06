@@ -1,3 +1,14 @@
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259C3;
+    --color-gris-oscuro: #666666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39B54A;
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+}
+
 /* 
     Paleta de colores
 
@@ -21,7 +32,7 @@
 
 body {
     font-family: 'Roboto', 'sans-serif';
-    background-color: #ebebeb;
+    background-color: var(--color-gris-claro);
     width: 100vw;
 }
 
@@ -32,7 +43,7 @@ body {
 /* Header */
 
 header {
-    background-color: #EAC926;
+    background-color: var(--color-amarillo);
     padding: 10px;
 }
 
@@ -95,7 +106,7 @@ nav a {
 }
 
 nav a:visited {
-    color: #000;
+    color: var(--color-negro);
 }
 
 nav li {
@@ -106,7 +117,7 @@ nav li {
 .burger-menu {
     width: 30px;
     height: 30px;
-    background-color: #1259c3;
+    background-color: var(--color-celeste);
     margin: 0 auto;
     padding: 5px;
     text-align:center;
@@ -174,7 +185,7 @@ input[type="file"] {
 }
 
 .form-column input:focus {
-    border: 1px solid #666;
+    border: 1px solid var(--color-gris-oscuro);
     outline: none;
 }
 
@@ -244,8 +255,8 @@ input[type="file"]:focus {
 #boton-enviar {
     height: 40px;
     width: 40%;
-    background: #1259c3;
-    color: white;
+    background: var(--color-celeste);
+    color: var(--color-blanco);
     border: none;
     border-radius: 5px;
 }
@@ -261,14 +272,14 @@ input[type="file"]:focus {
     width: 40%;
     border: none;
     text-decoration: underline;
-    background: #666;
-    color: #FFF;
+    background: var(--color-gris-oscuro);
+    color: var(--color-blanco);
     border-radius: 5px;
 }
 
 #boton-reset:hover {
-    background: #ebebeb;
-    color: #000;
+    background: var(--color-gris-claro);
+    color: var(--color-negro);
     transition: .3s;
 }
 
@@ -276,9 +287,9 @@ input[type="file"]:focus {
 
 footer {
     margin: 10px 5px 5px 5px;
-    background-color: #fff;
+    background-color: var(--color-blanco);
     padding: 30px 5px 5px 5px;
-    color: #666;
+    color: var(--color-gris-oscuro);
 }
 
 .footer-p {
@@ -409,8 +420,8 @@ footer section {
         width: 70vw;
         padding-top: 60px;
         padding-bottom: 60px;
-        border-top: 1px solid #666;
-        border-bottom: 1px solid #666;
+        border-top: 1px solid var(--color-gris-oscuro);
+        border-bottom: 1px solid var(--color-gris-oscuro);
     }
 
     .perfUsuario-input {
@@ -421,7 +432,7 @@ footer section {
     .form-catDeInteres {
         align-items: center;
         gap: 45px;
-        border-bottom: 1px solid #666;
+        border-bottom: 1px solid var(--color-gris-oscuro);
         width: 70vw;
         padding-bottom: 60px;
     }

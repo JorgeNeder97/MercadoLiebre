@@ -1,3 +1,14 @@
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259C3;
+    --color-gris-oscuro: #666666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39B54A;
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+}
+
 /* 
     Paleta de colores
 
@@ -20,7 +31,7 @@
 
 body {
     font-family: 'Roboto', 'sans-serif';
-    background-color: #ebebeb;
+    background-color: var(--color-gris-claro);
 }
 
 .banner {
@@ -30,7 +41,7 @@ body {
 /* Header */
 
 header {
-    background-color: #EAC926;
+    background-color: var(--color-amarillo);
     padding: 10px;
 }
 
@@ -85,7 +96,7 @@ nav a {
 }
 
 nav a:visited {
-    color: #000;
+    color: var(--color-negro);
 }
 
 nav li {
@@ -96,7 +107,7 @@ nav li {
 .burger-menu {
     width: 30px;
     height: 30px;
-    background-color: #1259c3;
+    background-color: var(--color-celeste);
     margin: 0 auto;
     padding: 5px;
     text-align:center;
@@ -112,7 +123,7 @@ nav li {
 
 /* Main */
 span {
-    color: red;
+    color: #FF0000;
     font-size: 12px;
     display:none;
 }
@@ -159,11 +170,11 @@ form {
 
 .form-submit {
     width: 70vw;
-    background: #1259c3;
+    background: var(--color-celeste);
     min-height: 50px;
     border-radius: 7px;
     border:none;
-    color: #FFFFFF;
+    color: var(--color-blanco);
 }
 
 .form-submit:hover {
@@ -175,9 +186,9 @@ form {
 
 footer {
     margin: 10px 5px 5px 5px;
-    background-color: #fff;
+    background-color: var(--color-blanco);
     padding: 30px 5px 5px 5px;
-    color: #666;
+    color: var(--color-gris-claro);
 }
 
 .footer-p {
