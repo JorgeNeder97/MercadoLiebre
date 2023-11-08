@@ -196,7 +196,7 @@ footer {
     margin: 10px 5px 5px 5px;
     background-color: var(--color-blanco);
     padding: 30px 5px 5px 5px;
-    color: var(--color-gris-claro);
+    color: var(--color-gris-oscuro);
 }
 
 .footer-p {
@@ -222,7 +222,6 @@ footer section {
     text-align: left;
     margin-top: 50px;
 }
-
 
 
 /* Tablet design */
