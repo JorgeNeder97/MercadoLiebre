@@ -45,6 +45,14 @@ header {
     padding: 10px;
 }
 
+#logo-home {
+    width:30%;
+}
+
+#logo-home img {
+    width: 100%;
+}
+
 .logo-and-search-bar {
     display: flex;
     flex-flow: row wrap;
@@ -93,6 +101,7 @@ nav, nav ul {
 
 nav a {
     text-decoration: none;
+    color: var(--color-negro);
 }
 
 nav a:visited {
@@ -118,7 +127,6 @@ nav li {
 .burger-menu i {
     margin-top: 45%;
 }
-
 
 
 /* Main */
@@ -224,10 +232,14 @@ footer section {
     /* Header */
 
     #logo-mercado-liebre {
-        width: 30%;
+        min-width: 30%;
     }
     
     .logo-and-search-bar input {
+        width: 30%;
+    }
+
+    .cuotas {
         width: 30%;
     }
 

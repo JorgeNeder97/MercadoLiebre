@@ -103,6 +103,7 @@ nav, nav ul {
 
 nav a {
     text-decoration: none;
+    color: var(--color-negro);
 }
 
 nav a:visited {
