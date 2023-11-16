@@ -4,8 +4,8 @@
   "description": "Proyecto de la clase 17 y consiguientes.",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js",
-    "start": "node app.js"
+    "test": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "author": "Jorge Neder",
   "license": "ISC",
