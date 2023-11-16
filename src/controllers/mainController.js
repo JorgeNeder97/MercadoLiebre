@@ -1,12 +1,13 @@
+const path = require('path');
 let mainController = {
     index: (req, res) => {
-        res.sendFile(path.resolve(__dirname, './views/home.html'));
+        res.sendFile(path.resolve(__dirname, '../views/home.html'));
     },
     register: (req, res) => {
-        res.sendFile(path.resolve(__dirname, './views/register.html'));
+        res.sendFile(path.resolve(__dirname, '../views/register.html'));
     },
     login: (req, res) => {
-        res.sendFile(path.resolve(__dirname, './views/login.html'));
+        res.sendFile(path.resolve(__dirname, '../views/login.html'));
     },
 }
 
